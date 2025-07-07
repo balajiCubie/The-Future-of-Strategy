@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future of Strategy: A Research Infographic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            padding-top: 4rem;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 300px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 350px;
+            }
+        }
+        .flowchart-arrow {
+            position: relative;
+            padding-right: 2rem;
+        }
+        .flowchart-arrow::after {
+            content: '→';
+            position: absolute;
+            right: 0.5rem;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.5rem;
+            color: #FFC700;
+        }
+        .kpi-card {
+            background: linear-gradient(135deg, #004AAD, #00A6ED);
+        }
+
+    </style>
+</head>
+<body class="text-[#3D3D3D]">
+    <nav class="fixed top-0 left-0 w-full bg-[#004AAD] text-white p-4 shadow-md z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#top" class="text-xl font-bold text-white hover:text-[#FFC700] transition-colors duration-300">Strategy Insights</a>
+            <div class="space-x-4">
+                <a href="#overview" class="hover:text-[#FFC700] transition-colors duration-300">Overview</a>
+                <a href="#research-landscape" class="hover:text-[#FFC700] transition-colors duration-300">Research Landscape</a>
+                <a href="#execution-gap" class="hover:text-[#FFC700] transition-colors duration-300">Execution Gap</a>
+                <a href="#emerging-horizons" class="hover:text-[#FFC700] transition-colors duration-300">Emerging Horizons</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto p-4 md:p-8">
+
+        <header id="top" class="text-center mb-12">
+            <h1 class="text-4xl md:text-6xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#004AAD] to-[#FF4D97]">Charting the Future of Strategy</h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">An infographic visualizing the key research frontiers shaping strategic management in a volatile, uncertain, complex, and ambiguous (VUCA) world.</p>
+        </header>
+
+        <main class="space-y-8">
+            
+            <section id="overview" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-center">
+                <div class="lg:col-span-1 bg-white rounded-lg shadow-lg p-6 h-full flex flex-col justify-center">
+                    <h2 class="text-2xl font-bold mb-4 text-center">Foundational vs. Emerging Research</h2>
+                     <div class="chart-container h-64 md:h-80">
+                        <canvas id="researchFocusChart"></canvas>
+                    </div>
+                    <p class="mt-4 text-sm text-gray-600 text-center">While core strategic pillars remain crucial, emerging domains like digital, ecosystems, and AI are rapidly gaining prominence, reflecting a significant shift in the research landscape.</p>
+                </div>
+
+                <div id="research-landscape" class="lg:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-2xl font-bold mb-2 text-center">A Quantitative Look at the Research Landscape</h2>
+                    <p class="text-center text-gray-600 mb-4">An analysis of 100 frontier research topics reveals the key areas of concentration in modern strategic management. The distribution highlights a strong focus on both enduring principles and new, disruptive forces.</p>
+                    <div class="chart-container h-96 md:h-[450px] max-h-[500px] w-full max-w-full">
+                        <canvas id="topicDistributionChart"></canvas>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="execution-gap" class="bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-center mb-2">The Strategy-Execution Gap: A Persistent Challenge</h2>
+                <p class="text-center text-gray-600 max-w-4xl mx-auto mb-8">One of the most significant challenges in management is bridging the chasm between strategic intent and operational reality. Success requires overcoming key barriers while leveraging powerful enablers.</p>
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                    
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-center text-[#FF4D97] border-b-2 border-[#FF4D97] pb-2">Common Barriers</h3>
+                        <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                            <h4 class="font-bold">Human & Cultural Factors</h4>
+                            <p class="text-sm text-gray-700">Lack of leadership commitment, cultural resistance to change, and weak middle management.</p>
+                        </div>
+                        <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                            <h4 class="font-bold">Process & System Failures</h4>
+                            <p class="text-sm text-gray-700">Poor communication, unclear KPIs, and static, infrequent reporting.</p>
+                        </div>
+                         <div class="bg-red-50 border border-red-200 rounded-lg p-4">
+                            <h4 class="font-bold">Planning Deficiencies</h4>
+                            <p class="text-sm text-gray-700">Excessive focus on documentation over action and poor translation to operational plans.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center lg:mt-24">
+                         <div class="text-6xl font-black text-gray-300 animate-pulse">→</div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-semibold text-center text-[#00A6ED] border-b-2 border-[#00A6ED] pb-2">Key Enablers</h3>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <h4 class="font-bold">AI & Agile Systems</h4>
+                            <p class="text-sm text-gray-700">AI-driven execution monitoring, agile organizational structures, and real-time tracking.</p>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <h4 class="font-bold">Aligned Leadership</h4>
+                            <p class="text-sm text-gray-700">Integrated frameworks connecting executives to middle management and clear accountability.</p>
+                        </div>
+                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                            <h4 class="font-bold">Supportive Culture</h4>
+                            <p class="text-sm text-gray-700">Fostering an environment that embraces change and supports strategic initiatives from the ground up.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+             <section id="emerging-horizons" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-2xl font-bold text-center mb-4">Challenges in Platform & Ecosystem Strategy</h2>
+                    <p class="text-center text-gray-600 mb-6">While promising immense value, building a successful platform strategy is fraught with challenges. Overcoming them requires clear vision, executive sponsorship, and a robust business case.</p>
+                    <div class="chart-container h-80">
+                        <canvas id="platformChallengesChart"></canvas>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-6">
+                    <h2 class="text-2xl font-bold text-center mb-4">The Interconnected Future of Strategy</h2>
+                     <p class="text-center text-gray-600 mb-6">Modern strategy is no longer siloed. It's a dynamic interplay between internal capabilities and powerful external forces that are reshaping industries globally.</p>
+                    <div class="chart-container h-80">
+                        <canvas id="futureForcesChart"></canvas>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="text-center mt-12 pt-8 border-t border-gray-300">
+            <p class="text-gray-500 text-sm">Infographic based on the report "Charting the Future of Strategic Management Research."</p>
+            <p class="text-gray-500 text-sm">Visualizations created using Chart.js and Tailwind CSS.</p>
+            <div class="mt-4 text-gray-500 text-xs">
+                <p>&copy; 2025 Strategy Insights. All rights reserved.</p>
+                <p>For research inquiries, contact <a href="mailto:info@strategyinsights.com" class="text-[#004AAD] hover:underline">info@strategyinsights.com</a></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+        const energeticPalette = {
+            blue: '#00A6ED',
+            darkBlue: '#004AAD',
+            pink: '#FF4D97',
+            yellow: '#FFC700',
+            darkGray: '#3D3D3D',
+            lightBlue: 'rgba(0, 166, 237, 0.2)',
+            lightPink: 'rgba(255, 77, 151, 0.2)',
+        };
+
+        const wrapLabel = (label, maxWidth = 16) => {
+            const words = label.split(' ');
+            const lines = [];
+            let currentLine = '';
+            words.forEach(word => {
+                if ((currentLine + ' ' + word).trim().length > maxWidth) {
+                    lines.push(currentLine.trim());
+                    currentLine = word;
+                } else {
+                    currentLine = (currentLine + ' ' + word).trim();
+                }
+            });
+            if (currentLine) {
+                lines.push(currentLine.trim());
+            }
+            return lines;
+        };
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+                return label.join(' ');
+            }
+            return label;
+        };
+        
+        const defaultChartOptions = {
+            plugins: {
+                legend: {
+                    labels: {
+                        color: energeticPalette.darkGray,
+                        font: {
+                            family: "'Inter', sans-serif"
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    backgroundColor: energeticPalette.darkGray,
+                    titleFont: { size: 14, family: "'Inter', sans-serif", weight: 'bold' },
+                    bodyFont: { size: 12, family: "'Inter', sans-serif" }
+                }
+            }
+        };
+
+        new Chart(document.getElementById('researchFocusChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Foundational Pillars', 'Emerging Horizons'],
+                datasets: [{
+                    label: 'Research Focus',
+                    data: [55, 45],
+                    backgroundColor: [energeticPalette.blue, energeticPalette.pink],
+                    borderColor: '#ffffff',
+                    borderWidth: 4,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: energeticPalette.darkGray,
+                            font: { size: 14, family: "'Inter', sans-serif" }
+                        }
+                    },
+                     tooltip: defaultChartOptions.plugins.tooltip
+                },
+                cutout: '60%'
+            }
+        });
+
+        const topicLabels = [
+            'Corporate & M&A Strategy', 
+            'Competitive & Global Strategy', 
+            'Planning & Execution', 
+            'Leadership & Behavioral', 
+            'Innovation, Digital & Ecosystems'
+        ];
+        new Chart(document.getElementById('topicDistributionChart'), {
+            type: 'bar',
+            data: {
+                labels: topicLabels.map(l => wrapLabel(l, 20)),
+                datasets: [{
+                    label: 'Number of Research Topics',
+                    data: [25, 27, 15, 15, 18],
+                    backgroundColor: [
+                        energeticPalette.blue,
+                        energeticPalette.darkBlue,
+                        energeticPalette.pink,
+                        energeticPalette.yellow,
+                        '#8E44AD'
+                    ],
+                    borderRadius: 5,
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        ticks: { color: energeticPalette.darkGray, font: { family: "'Inter', sans-serif" } },
+                        grid: { display: false }
+                    },
+                    x: {
+                        ticks: { color: energeticPalette.darkGray, font: { family: "'Inter', sans-serif" } },
+                        grid: { color: '#e0e0e0', borderDash: [5, 5] },
+                        title: {
+                            display: true,
+                            text: 'Number of Topics (out of 100)',
+                            color: energeticPalette.darkGray,
+                            font: { size: 14, family: "'Inter', sans-serif", weight: 'bold' }
+                        }
+                    }
+                },
+                 plugins: {
+                     legend: { display: false },
+                     tooltip: defaultChartOptions.plugins.tooltip
+                 }
+            }
+        });
+
+        new Chart(document.getElementById('platformChallengesChart'), {
+            type: 'polarArea',
+            data: {
+                labels: ['Complexity', 'Unclear ROI', 'No Exec Sponsor', 'No Clear Strategy', 'Budget Constraints'],
+                datasets: [{
+                    label: 'Challenge Severity',
+                    data: [35, 30, 25, 20, 15],
+                    backgroundColor: [
+                        'rgba(255, 77, 151, 0.7)',
+                        'rgba(0, 166, 237, 0.7)',
+                        'rgba(255, 199, 0, 0.7)',
+                        'rgba(0, 74, 173, 0.7)',
+                        'rgba(61, 61, 61, 0.7)'
+                    ],
+                    borderWidth: 1,
+                    borderColor: energeticPalette.darkGray
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        ticks: { display: false },
+                        grid: { circular: true, color: '#e0e0e0' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: energeticPalette.darkGray,
+                            font: { size: 12, family: "'Inter', sans-serif" }
+                        }
+                    },
+                    tooltip: defaultChartOptions.plugins.tooltip
+                }
+            }
+        });
+        
+        new Chart(document.getElementById('futureForcesChart'), {
+            type: 'radar',
+            data: {
+                labels: ['AI & Data', 'Sustainability', 'Geopolitics', 'Ecosystems', 'Behavioral Science', 'Digitalization'],
+                datasets: [{
+                    label: 'Impact on Strategy',
+                    data: [90, 80, 85, 75, 70, 95],
+                    backgroundColor: energeticPalette.lightBlue,
+                    borderColor: energeticPalette.blue,
+                    borderWidth: 2,
+                    pointBackgroundColor: energeticPalette.blue,
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: energeticPalette.blue
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    r: {
+                        angleLines: { color: '#e0e0e0' },
+                        grid: { color: '#e0e0e0' },
+                        pointLabels: {
+                            font: { size: 12, family: "'Inter', sans-serif", weight: 'bold' },
+                            color: energeticPalette.darkGray
+                        },
+                        ticks: {
+                            backdropColor: 'rgba(255, 255, 255, 0.75)',
+                            color: energeticPalette.darkGray
+                        }
+                    }
+                },
+                plugins: {
+                     legend: { display: false },
+                     tooltip: defaultChartOptions.plugins.tooltip
+                }
+            }
+        });
+
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
